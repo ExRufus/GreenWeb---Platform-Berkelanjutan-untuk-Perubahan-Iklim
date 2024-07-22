@@ -1,0 +1,15 @@
+{
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
+  "/404": "pages/404.html",
+  "/community-page": "pages/community-page.html",
+  "/activity-detail-page": "pages/activity-detail-page.html",
+  "/activity-page": "pages/activity-page.html",
+  "/_document": "pages/_document.js",
+  "/landing-page": "pages/landing-page.html",
+  "/": "pages/index.html",
+  "/login-page": "pages/login-page.html",
+  "/profile-page": "pages/profile-page.html",
+  "/setting-page": "pages/setting-page.html",
+  "/signup-page": "pages/signup-page.html"
+}
