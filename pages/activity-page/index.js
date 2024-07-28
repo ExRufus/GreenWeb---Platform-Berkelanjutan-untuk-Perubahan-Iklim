@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Navbar44 from '../components/navbar44'
-import Footer11 from '../components/footer11'
+import Footer11 from '../../components/footer11'
+import Navbar45 from '../../components/navbar45'
+import Link from 'next/link'
 
 const ActivityPage = (props) => {
   return (
@@ -15,9 +16,9 @@ const ActivityPage = (props) => {
             content="Activity-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar44></Navbar44>
+        <Navbar45></Navbar45>
         <img alt="pastedImage" src="/external/pastedimage-b416h-200h.png" />
-        <img alt="pastedImage" src="/external/pastedimage-iywd-1500w.png" />
+        <Link href={"/activity-page/1"}><img alt="pastedImage" src="/external/pastedimage-iywd-1500w.png" /></Link>
         <Footer11></Footer11>
       </div>
       <style jsx>

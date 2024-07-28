@@ -2,6 +2,7 @@ import React from 'react'
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const Hero171 = (props) => {
   return (
@@ -14,10 +15,10 @@ const Hero171 = (props) => {
           </div>
           <div className="hero171-actions">
             <button className="thq-button-filled hero171-button">
-              <span className="thq-body-small">{props.action1}</span>
+              <span className="thq-body-small"><Link href={"/activity-page"}>{props.action1}</Link></span>
             </button>
             <button className="thq-button-outline hero171-button1">
-              <span className="thq-body-small">{props.action2}</span>
+              <span className="thq-body-small"><Link href={"/community-page"}>{props.action2}</Link></span>
             </button>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Navbar45 from '../components/navbar45'
-import Footer12 from '../components/footer12'
+import Navbar45 from '../../components/navbar45'
+import Footer12 from '../../components/footer12'
 
 const ActivityDetailPage = (props) => {
   return (

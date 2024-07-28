@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Navbar4 from '../components/navbar4'
+import Navbar45 from '../components/navbar45'
 
 const SettingPage = (props) => {
   return (
@@ -14,7 +15,7 @@ const SettingPage = (props) => {
             content="Setting-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar4 rootClassName="navbar4-root-class-name4"></Navbar4>
+        <Navbar45 rootClassName="navbar4-root-class-name4"></Navbar45>
         <div className="setting-page-container1">
           <div className="setting-page-frame6">
             <div className="setting-page-i-phone142">

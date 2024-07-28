@@ -1,6 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const Hero9 = (props) => {
   return (
@@ -19,12 +20,12 @@ const Hero9 = (props) => {
             <div className="hero9-actions">
               <button className="thq-button-filled hero9-button">
                 <span className="hero9-text2 thq-body-small">
-                  {props.action1}
+                <Link href={"/activity-page"}>{props.action1}</Link>
                 </span>
               </button>
               <button className="thq-button-outline hero9-button1">
                 <span className="hero9-text3 thq-body-small">
-                  {props.action2}
+                <Link href={"/community-page"}>{props.action2}</Link>
                 </span>
               </button>
             </div>

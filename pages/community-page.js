@@ -9,6 +9,7 @@ import Features25 from '../components/features25'
 import Testimonial17 from '../components/testimonial17'
 import Contact10 from '../components/contact10'
 import Footer1 from '../components/footer1'
+import Navbar45 from '../components/navbar45'
 
 const CommunityPage = (props) => {
   return (
@@ -21,7 +22,7 @@ const CommunityPage = (props) => {
             content="Community-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar4></Navbar4>
+        <Navbar45></Navbar45>
         <Hero17></Hero17>
         <Features24></Features24>
         <CTA26></CTA26>

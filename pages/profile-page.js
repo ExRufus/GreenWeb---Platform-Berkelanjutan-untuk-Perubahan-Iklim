@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Navbar4 from '../components/navbar4'
+import Navbar45 from '../components/navbar45'
 
 const ProfilePage = (props) => {
   return (
@@ -14,7 +15,7 @@ const ProfilePage = (props) => {
             content="Profile-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar4 rootClassName="navbar4-root-class-name3"></Navbar4>
+        <Navbar45 rootClassName="navbar4-root-class-name3"></Navbar45>
         <div className="profile-page-frame5">
           <div className="profile-page-profile">
             <span className="profile-page-text">

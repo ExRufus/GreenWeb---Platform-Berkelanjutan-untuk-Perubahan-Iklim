@@ -1,6 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const Features1 = (props) => {
   return (
@@ -61,10 +62,10 @@ const Features1 = (props) => {
           </div>
           <div className="features1-actions">
             <button className="thq-button-filled features1-button">
-              <span className="thq-body-small">{props.mainAction}</span>
+              <span className="thq-body-small"><Link href={"/activity-page"}>{props.mainAction}</Link></span>
             </button>
             <button className="thq-button-outline features1-button1">
-              <span className="thq-body-small">{props.secondaryAction}</span>
+              <span className="thq-body-small"><Link href={"/community-page"}>{props.secondaryAction}</Link></span>
             </button>
           </div>
         </div>

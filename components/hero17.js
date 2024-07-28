@@ -2,6 +2,7 @@ import React from 'react'
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const Hero17 = (props) => {
   return (
@@ -14,10 +15,7 @@ const Hero17 = (props) => {
           </div>
           <div className="hero17-actions">
             <button className="thq-button-filled hero17-button">
-              <span className="thq-body-small">{props.action1}</span>
-            </button>
-            <button className="thq-button-outline hero17-button1">
-              <span className="thq-body-small">{props.action2}</span>
+              <span className="thq-body-small"><Link href={"/login-page"}>{props.action1}</Link></span>
             </button>
           </div>
         </div>
@@ -374,7 +372,7 @@ Hero17.defaultProps = {
     'https://images.unsplash.com/photo-1561100692-df60c6a3124c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTM2NDE2NXw&ixlib=rb-4.0.3&q=80&w=1080',
   image6Src:
     'https://images.unsplash.com/photo-1715347783356-ebe14b1b9b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTM2NDE1M3w&ixlib=rb-4.0.3&q=80&w=1080',
-  action2: 'Secondary action',
+  action2: 'Register',
   image10Alt: 'Hero Image',
   content1:
     'Join us in our mission to monitor ecosystem health, stay informed on environmental issues, and engage in discussions to create a sustainable future for all.',
@@ -397,7 +395,7 @@ Hero17.defaultProps = {
     'https://images.unsplash.com/photo-1593349783603-654a7069d88d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTM2NDE2M3w&ixlib=rb-4.0.3&q=80&w=1080',
   image7Alt: 'Hero Image',
   image5Alt: 'Hero Image',
-  action1: 'Main action',
+  action1: 'Join Us',
   image10Src:
     'https://images.unsplash.com/photo-1561480495-16cfd5d78bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTM2NDE2Nnw&ixlib=rb-4.0.3&q=80&w=1080',
 }

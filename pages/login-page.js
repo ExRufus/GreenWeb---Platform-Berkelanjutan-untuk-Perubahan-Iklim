@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Navbar4 from '../components/navbar4'
 import SignUp10 from '../components/sign-up10'
+import Navbar45 from '../components/navbar45'
 
 const LoginPage = (props) => {
   return (
@@ -15,7 +16,7 @@ const LoginPage = (props) => {
             content="Login-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar4 rootClassName="navbar4-root-class-name"></Navbar4>
+        <Navbar45 rootClassName="navbar4-root-class-name"></Navbar45>
         <SignUp10 rootClassName="sign-up10-root-class-name1"></SignUp10>
       </div>
       <style jsx>

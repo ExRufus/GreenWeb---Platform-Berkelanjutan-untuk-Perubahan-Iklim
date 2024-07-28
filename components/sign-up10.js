@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import PropTypes from 'prop-types'
 
 import TitleRoot1 from './title-root1'
+import { useRouter } from 'next/router'
 
 const SignUp10 = (props) => {
+  const router = useRouter()
+
+  const [loginForm, setLoginForm] = useState({
+    email:"",
+    password:"",
+  })
+
+  const inputFormHandler =(e) => {
+    const {value, name}= e.target
+    setLoginForm({...loginForm, [name]: value})
+  }
+
+  const loginSubmitHandler = (e) => {
+    e.preventDefault()
+
+    if(loginForm.email === "greenweb@binus.com" && loginForm.password === "greenweb123"){
+      alert("Login Success")
+      router.push("/")
+    } else{ 
+      alert("login Failed")}
+  }
+
   return (
     <>
       <div className={`sign-up10-container ${props.rootClassName} `}>
@@ -20,7 +43,9 @@ const SignUp10 = (props) => {
               rootClassName="title-root1-root-class-name"
               heading1="Login"
             ></TitleRoot1>
-            <form className="sign-up10-form1">
+            <form className="sign-up10-form1"
+            onSubmit={loginSubmitHandler}
+                    >
               <div className="sign-up10-email">
                 <label
                   htmlFor="thq-sign-up-10-email"
@@ -30,10 +55,13 @@ const SignUp10 = (props) => {
                 </label>
                 <input
                   type="email"
+                  name='email'
                   id="thq-sign-up-10-email"
                   required="true"
                   placeholder="Email address"
                   className="sign-up10-textinput thq-body-large thq-input"
+                  value={loginForm.email}
+                  onChange={inputFormHandler}
                 />
               </div>
               <div className="sign-up10-password">
@@ -58,6 +86,10 @@ const SignUp10 = (props) => {
                     required="true"
                     placeholder="Password"
                     className="sign-up10-textinput1 thq-body-large thq-input"
+                    name='password'
+
+                  value={loginForm.password}
+                  onChange={inputFormHandler}
                   />
                 </div>
               </div>
@@ -65,6 +97,7 @@ const SignUp10 = (props) => {
             <button
               type="submit"
               className="sign-up10-button thq-button-filled"
+              onClick={loginSubmitHandler}
             >
               <span className="sign-up10-text3 thq-body-small">
                 {props.action1}
@@ -366,7 +399,7 @@ SignUp10.defaultProps = {
   image1Alt: 'Sign Up Image',
   image1Src:
     'https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTQyMDgwOHw&ixlib=rb-4.0.3&q=80&w=1080',
-  action1: 'Create your account now',
+  action1: 'Login',
 }
 
 SignUp10.propTypes = {

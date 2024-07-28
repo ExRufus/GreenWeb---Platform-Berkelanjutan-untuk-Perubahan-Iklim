@@ -12,8 +12,9 @@ import CTA1 from '../components/cta1'
 import FAQ1 from '../components/faq1'
 import Contact4 from '../components/contact4'
 import Footer1 from '../components/footer1'
+import Navbar45 from '../components/navbar45'
 
-const LandingPage = (props) => {
+const AboutPage = (props) => {
   return (
     <>
       <div className="landing-page-container">
@@ -24,7 +25,7 @@ const LandingPage = (props) => {
             content="Landing-Page - Handmade Attractive Grouse"
           />
         </Head>
-        <Navbar4></Navbar4>
+        <Navbar45></Navbar45>
         <Hero3
           action1="Get Started"
           content1="Track your carbon footprint and monitor ecosystem health"
@@ -69,4 +70,4 @@ const LandingPage = (props) => {
   )
 }
 
-export default LandingPage
+export default AboutPage
